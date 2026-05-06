@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina 璀璨星辰金項鍊 | Lumina Jewelry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .product-detail-container { display: grid; grid-template-columns: 1.2fr 1fr; gap: 50px; padding: 150px 0 80px; }
+        .product-main-image img { width: 100%; border-radius: 15px; box-shadow: var(--shadow); }
+        .product-meta h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .product-meta .price { font-size: 1.8rem; color: var(--primary); font-weight: 700; margin-bottom: 30px; }
+        .product-description { margin-bottom: 40px; color: #666; font-size: 1.1rem; line-height: 1.8; }
+        .add-to-cart { display: flex; gap: 20px; align-items: center; }
+        .quantity { display: flex; align-items: center; border: 1px solid #ddd; border-radius: 5px; padding: 5px 15px; }
+        @media (max-width: 768px) { .product-detail-container { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="assets/logo.png" alt="Lumina Jewelry Logo"></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="about.html">公司簡介</a></li>
+                    <li><a href="necklaces.html">項鍊</a></li>
+                    <li><a href="bracelets.html">手鍊</a></li>
+                    <li><a href="hair-clips.html">髮夾</a></li>
+                    <li><a href="headbands.html">髮箍</a></li>
+                    <li><a href="others.html">其它類</a></li>
+                    <li><a href="contact.html">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="product-detail-container">
+            <div class="product-main-image">
+                <img src="assets/products/necklace_1.png" alt="Lumina 璀璨星辰金項鍊">
+            </div>
+            <div class="product-meta">
+                <p style="color: var(--primary); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">Lumina Collection</p>
+                <h1>Lumina 璀璨星辰金項鍊</h1>
+                <p class="price">NT$ 3,200</p>
+                <div class="product-description">
+                    <p>這款 18K 金項鍊採用精緻的星辰設計，點綴高品質鑽石，展現低調奢華。無論是日常佩戴還是正式場合，都能完美襯托您的氣質。</p>
+                </div>
+                <div class="add-to-cart">
+                    <div class="quantity">
+                        <span style="margin-right: 15px;">數量</span>
+                        <input type="number" value="1" min="1" style="width: 50px; border: none; font-size: 1rem;">
+                    </div>
+                    <button class="btn" style="border: none; cursor: pointer;">加入購物車</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-bottom"><p>&copy; 2026 Lumina Jewelry. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+</body>
+</html>

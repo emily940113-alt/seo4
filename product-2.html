@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>優雅珍珠長鍊 | Lumina Jewelry</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .product-detail-container { display: grid; grid-template-columns: 1.2fr 1fr; gap: 50px; padding: 150px 0 80px; }
+        .product-main-image img { width: 100%; border-radius: 15px; box-shadow: var(--shadow); }
+        .product-meta h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .product-meta .price { font-size: 1.8rem; color: var(--primary); font-weight: 700; margin-bottom: 30px; }
+        .product-description { margin-bottom: 40px; color: #666; font-size: 1.1rem; line-height: 1.8; }
+        .add-to-cart { display: flex; gap: 20px; align-items: center; }
+        @media (max-width: 768px) { .product-detail-container { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container"><nav><div class="logo"><a href="index.html"><img src="assets/logo.png" alt="Logo"></a></div>
+        <ul class="nav-links"><li><a href="necklaces.html">項鍊</a></li><li><a href="bracelets.html">手鍊</a></li><li><a href="index.html">返回首頁</a></li></ul></nav></div>
+    </header>
+    <main class="container">
+        <div class="product-detail-container">
+            <div class="product-main-image"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80" alt="Product"></div>
+            <div class="product-meta">
+                <h1>優雅珍珠長鍊</h1>
+                <p class="price">NT$ 2,800</p>
+                <div class="product-description"><p>精選天然淡水珍珠，展現溫潤如水的女性氣質。長鍊設計可多樣化佩戴，增添穿搭層次感。</p></div>
+                <div class="add-to-cart"><button class="btn">加入購物車</button></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
